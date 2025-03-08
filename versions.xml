@@ -1,5 +1,13 @@
 <icons>
   <line>
     <icon name="Template" ID="1" color="#5f5f5f" locked="false" customName="true" customIcon="asset-v1/icon.png"></icon>
+    <icon name="Locked" ID="2" color="#5f5f5f" locked="true" customName="true"></icon>
+    <icon name="Locked" ID="3" color="#5f5f5f" locked="true" customName="true"></icon>
+    <icon name="Locked" ID="4" color="#5f5f5f" locked="true" customName="true"></icon>
+    <icon name="Locked" ID="5" color="#5f5f5f" locked="true" customName="true"></icon>
+    <icon name="Locked" ID="6" color="#5f5f5f" locked="true" customName="true"></icon>
+     <icon name="Locked" ID="7" color="#5f5f5f" locked="true" customName="true"></icon>
+     <icon name="Locked" ID="8" color="#5f5f5f" locked="true" customName="true"></icon>
+     <icon name="Locked" ID="9" color="#5f5f5f" locked="true" customName="true"></icon>
   </line>
 </icons>
