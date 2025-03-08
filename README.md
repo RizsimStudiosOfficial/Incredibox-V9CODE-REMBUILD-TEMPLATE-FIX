@@ -1,10 +1,10 @@
-# Incredibox V9CODE PORT TEMPLATE
-this was made to make sure you dont have to go thru a hassle lol (for v9 code base shit ofc)
+# Incredibox V9CODE REMBUILD TEMPLATE
+I only made today cuz rem didnt release the thing yet so uhhhhhhh
 
 # THE GUIDE
 I recommend using this site first then you can go back to this: https://boogoxseal.xyz/tools/appjs
 ![versionexamplev9code](https://github.com/user-attachments/assets/3c61c50a-1232-41e4-90c7-5a5f3f2cae7d)
-can be found in the `js/script.min.js` file
+can be found in the `js/apps.js` file
 
 to change what version you want it on you can change the "versions.v1" to like "versions.v2", "versions.v3", "versions.v4" and so on all the way up to "versions.v9" unless if you want to add a custom version
 that requires some css coding and stuff
@@ -28,7 +28,7 @@ its "colV1:" and you can set it to anything like this for example colV1: "#84DCC
 but you can set it to anything that fits that versions color
 
 # TO ADD A NEW VERSION
-go under the line of 297 and press enter and add this under it for example (change the number to whatever you want like if you want it on v2 change the number to 2) in the script min js file
+go under the line of 297 and press enter and add this under it for example (change the number to whatever you want like if you want it on v2 change the number to 2) in the apps js file
    ```
    versions.v6 = { // ALIVE
   name: "Alive",
@@ -238,8 +238,6 @@ for audio i recommend https://online-audio-converter.com/ the reason is because 
 
 for video i recommend https://www.freeconvert.com/webm-to-mp4
 
-# NOTE 
-I will make a YT tutorial of how your supposed to mod this version of incredibox so then you can do it too!
 
 # MAIN QUESTION FOR PORTING V8 CODED MODS TO V9?
 will the !0 or the !1 work?
