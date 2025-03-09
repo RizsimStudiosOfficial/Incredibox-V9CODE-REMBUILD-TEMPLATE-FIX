@@ -540,17 +540,6 @@ hr {
   #sp-select .vicon.clicked .img {
     transform: scale(1.05);
   }
-  #sp-select #customicon, #sp-select .vicon#icon3 .img {
-    transition: transform 0.2s ease-in;
-  }
-  #sp-select #customicon:hover:not(.open), #sp-select .vicon#icon3 .img:hover:not(.open){
-    transform: scale(1.05);
-    transition: transform 0.15s var(--easeOutBack);
-  }
-  #sp-select #customicon.clicked, #sp-select .vicon#icon3 .img.clicked{
-    transform: scale(1.05);
-  }
-}
 #sp-select .vicon .img {
   width: 100%;
   height: 0;
