@@ -14,11 +14,11 @@ use this site https://joalor64gh.github.io/LooptimeFinder/ its a wip but its a r
 
 # FOR POLOS
 ![poloanimearrayexamplev9code](https://github.com/user-attachments/assets/818364f3-4eed-4a7a-9e2f-e2afc274d139)
-can be found in the `js/script.min.js` file
+can be found in the `js/apps.js` file
 
 # FOR BONUSES
 ![bonusexamplev9code](https://github.com/user-attachments/assets/a67e339e-330e-42be-8501-bd2731867c5d)
-can be found in the `js/script.min.js` file
+can be found in the `js/apps.js` file
 
 
 
@@ -177,61 +177,33 @@ go under the line of 297 and press enter and add this under it for example (chan
 };
    ```
 
-# FOR VERSION ICON MANAGEMENT
-find the sp select thing and go to sp line and find something like this
-   ```
-          <div class="vicon" id="icon1">
-           <div class="img"></div>
-           <div class="txt"></div>
-           <div class="bul">
-            <svg class="icn-svg"><use xlink:href="#ic-check"></use></svg>
-               </div>
-            </div>
-  ```
-
-that is a version icon thingy are whatever for the index and app html thats what you remove if you have extras
-
-# ONLY HAVING ONE VERSION
-it should be something like this
-```
-                <div id="sp-select">
-                    <div class="sp-line">
-                        <div class="vicon" id="icon1">
-                            <div class="img"></div>
-                            <div class="txt"></div>
-                            <div class="bul">
-                                <svg class="icn-svg"><use xlink:href="#ic-check"></use></svg>
-                            </div>
-                        </div>
-                </div>
-```
-
 # TO ADD A VERSION
-make sure its in the sp select thing or it wont work
+something like this
 ``` 
-                <div id="sp-select">
-                    <div class="sp-line">
-                        <div class="vicon" id="icon1">
-                            <div class="img"></div>
-                            <div class="txt"></div>
-                            <div class="bul">
-                                <svg class="icn-svg"><use xlink:href="#ic-check"></use></svg>
-                            </div>
-                        </div>
-                        <div class="vicon" id="icon2">
-                            <div class="img"></div>
-                            <div class="txt"></div>
-                            <div class="bul">
-                                <svg class="icn-svg"><use xlink:href="#ic-check"></use></svg>
-                            </div>
-                        </div>
-                </div>
+<!--  
+HOW TO USE IT:
+• <line> category is used to create a new line (using more than 3 might cause issues)
+• name="TEXT" is the name of the icon
+• ID="NUMBER" is the ID of the icon
+• color="#HEX" is the color of the title and checkmark
+• locked="true/false" is the lock status of the icon, if its locked it will be impossible to open
+• customName="true/false" if its enabled, it will use name of your version instead of the one from the switch-bt-title-tiny@2x.png
+• customIcon="asset-v1/ICON.png" is the path to the icon, removing customIcon will use the default one from switch-bt-visu-1@2x.png
+• hidden="true/false" if its enabled, it will hide the icon from the list
+ -->
+
+<icons>
+  <line>
+    <icon name="Template" ID="1" color="#666" locked="false" customName="true" customIcon="asset-v1/icon.png" hidden="false"></icon>
+    <icon name="Example" ID="2" color="#666" locked="false" customName="true" customIcon="asset-v2/icon.png" hidden="false"></icon>
+  </line>
+</icons>
 ```
 
 its a example but just use a text editor like notepad++ or VS Code it will be helpful editing how version you want!
 
 # MAKE YOUR MOD SUPPORTED FOR IOS?
-simple in the `js/script.min.js` file find the sndext = "ogg" and vidext = "webm" and change ogg to mp3 and webm to mp4 (BUT IT DOES REQUIRE YOU TO CONVERT STUFF)
+simple in the `js/script.min.js` file find the sndext = "ogg" and vidext = "webm" and change ogg to mp3 and webm to mp4 (BUT IT DOES REQUIRE YOU TO CONVERT STUFF) in build
 
 # WHAT I RECOMMEND FOR CONVERTING (to make your mod have ios support)
 for audio i recommend https://online-audio-converter.com/ the reason is because you dont have a limit used it before and it was great!
@@ -241,5 +213,5 @@ for video i recommend https://www.freeconvert.com/webm-to-mp4
 
 # MAIN QUESTION FOR PORTING V8 CODED MODS TO V9?
 will the !0 or the !1 work?
-The answer to that is yes I think I never tested that but when putting it in the script.min.js file it should work
+The answer to that is yes
 But I highly still recommend putting the app js thru the vercel js site to get a more accurate result!
